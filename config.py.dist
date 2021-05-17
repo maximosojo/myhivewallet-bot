@@ -1,0 +1,14 @@
+# This file is part of the Maxtoan Tools package.
+# 
+# (c) https://maximosojo.github.io/myhivewallet-bot
+# 
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
+
+# Clase de configuración de bot agregada al gitignore para poder ser usada libremente
+class Config(object):
+
+    BOT_TOKEN = ''
+
+    def getBotToken():
+        return Config.BOT_TOKEN
