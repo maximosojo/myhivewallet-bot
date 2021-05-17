@@ -9,6 +9,7 @@ git clone https://github.com/maximosojo/myhivewallet-bot.git
 ```
 ## Requerimientos
 
+- pip3 install bs4
 - pip3 install requests
 - pip3 install python-telegram-bot
 
