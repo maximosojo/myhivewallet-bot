@@ -23,7 +23,7 @@ BOT_TOKEN = ''
 
 ## Documentación
 
-[Publicación](Resources/doc/nstall.md)
+[Publicación]()
 
 ## Licencia
 

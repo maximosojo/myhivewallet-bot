@@ -83,8 +83,8 @@ def start(update, context):
               "¿Que soy?.\n" \
               "Soy el Bot Wallet de Hive, conmigo puede tener en su Telegram un resumen a tiempo real de su wallet en Hive. Naci a modo de prueba y esta escrito en un post público en Hive\n\n" \
               "Use el comando /help para conocer las opciones disponibles.\n\n" \
-              "La publicación donde naci https://maximosojo.github.io/myhivewallet-bot\n" \
-              "Mi código fuente esta en https://maximosojo.github.io/myhivewallet-bot\n" \
+              "La publicación donde naci https://github.com/maximosojo/myhivewallet-bot\n" \
+              "Mi código fuente esta en https://github.com/maximosojo/myhivewallet-bot\n" \
               "Perfil de mi creador https://peakd.com/@maximosojo\n\n" \
               "Nota: El bot no registra ningun tipo de información, esto puede ser verificado en su código fuente.\n\n" \
               "Disfrute del bot. Gracias por estar aquí! \n\n".format(user.first_name)
