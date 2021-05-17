@@ -10,15 +10,9 @@ from config import Config
 # Import logging
 import logging
 # Import telegram
-from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardRemove, Update
 from telegram.ext import (
     Updater,
-    CommandHandler,
-    MessageHandler,
-    CallbackQueryHandler,
-    Filters,
-    ConversationHandler,
-    CallbackContext,
+    CommandHandler
 )
 # Enable logging
 from telegram.utils import helpers
