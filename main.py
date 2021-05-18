@@ -77,19 +77,21 @@ def search_action(context,username):
     
     return is_valid
 
+# Iniciaremos el bot
 def start(update, context):
     user = update.message.from_user
     bot_msg = "Saludos {}, bienvenido.\n\n" \
               "¿Que soy?.\n" \
               "Soy el Bot Wallet de Hive, conmigo puede tener en su Telegram un resumen a tiempo real de su wallet en Hive. Naci a modo de prueba y esta escrito en un post público en Hive\n\n" \
               "Use el comando /help para conocer las opciones disponibles.\n\n" \
-              "La publicación donde naci https://github.com/maximosojo/myhivewallet-bot\n" \
+              "La publicación donde naci https://peakd.com/hive-169321/@maximosojo/bot-en-telegram-para-wallet-hive-telegram-bot-for-wallet-hive\n" \
               "Mi código fuente esta en https://github.com/maximosojo/myhivewallet-bot\n" \
               "Perfil de mi creador https://peakd.com/@maximosojo\n\n" \
               "Nota: El bot no registra ningun tipo de información, esto puede ser verificado en su código fuente.\n\n" \
               "Disfrute del bot. Gracias por estar aquí! \n\n".format(user.first_name)
     update.message.reply_text(bot_msg)
 
+# Nos retornara los comandos disponibles
 def help(update, context):
     """Enviar un mensaje cuando se emite el comando /help"""
     bot_msg = "Comandos disponibles:\n" \
@@ -98,6 +100,7 @@ def help(update, context):
               "/exit Finalizar la conversación con el bot\n"
     update.message.reply_text(bot_msg)
 
+# Con este comando podremos obtener nuestro resumen
 def summary(update, context):
     user = update.message.from_user
     is_valid = search_action(context,user.username)
